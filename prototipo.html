@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi empredimiento</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"/>
+</head>
+<body>
+    <header>
+        <!--
+            <ul>
+                <li><a>Mujer</a></li>
+                <li><a>Hombre</a></li>
+                <li><a>Niño</a></li>
+                <li><a>Sale</a></li>
+            </ul>-->
+        <nav>
+            <a class="logo" href="index.html"><span>E</span>Commerce</a>
+            
+            <fieldset class="buscar-productos">
+                <button id="lupa" class="lupa"><i class="ti ti-search"></i></i></button>
+                <input id="buscar" class="buscar" type="text" placeholder="Buscar...">
+                <button class="x-lupa sleep"><i class="ti ti-x"></i></button>
+                <pre id="x-borrado"></pre>
+            </fieldset>
+            <div class="botonera">
+                <div><i id="carrito" class="ti ti-shopping-bag carrito"></i></div>
+                <div><i class="ti ti-user pedidos"></i></div>
+            </div>
+            <div id="mi-carrito" class="mi-carrito">
+                <div class="titulo-carrito">
+                    <h2>Mi carrito</h2>
+                    <div class="cont-cerrar"><i id="cerrar-carrito" class="ti ti-x cerrar-carrito"></i></div>
+                </div>
+
+                <div class="contenido-carrito">
+                    <p class="nada-en-carrito">No tienes ningún artículo en tu carrito de compras.</p>
+                </div>
+
+                <div class="total">
+                    <div class="titulo-total">total</div>
+                    <div class="precio-total">$0</div>
+                </div>
+
+                <button class="btn-comprar" type="button" >Finalizar compra</button>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="ficha-producto">
+            <div class="contenedor-ficha">
+                <div class="contenedor-img"><img src="https://essential.vtexassets.com/arquivos/ids/1456283-800-auto?v=638503622920130000&width=800&height=auto&aspect=true" alt=""></div>
+                <div class="contenedor-info">
+                    <h1>Camiseta San Lorenzo suplente 2024 mujer</h1>
+                    <div class="valoracion">
+                        <i class="ti ti-star-filled star"></i>
+                        <i class="ti ti-star-filled star"></i>
+                        <i class="ti ti-star-filled star"></i>
+                        <i class="ti ti-star-filled star"></i>
+                        <i class="ti ti-star-filled star"></i>
+                    </div>
+                    <span>$79.999</span>
+                    <p><i class="ti ti-circle-check"></i>Stock:<span>4</span></p>
+                    <button class="info-agregar-producto">Añadir al carrito</button>
+                    <div class="ficha-descripcion">
+                        <h3>Descripción</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et nihil a consectetur accusantium voluptatum alias debitis aliquam quo vel distinctio commodi, dignissimos rerum minus aperiam. Voluptas, hic. Dignissimos iusto tempore libero qui sapiente quas aliquid nam! Commodi quis inventore repellat. Quibusdam hic rerum eligendi iste in nostrum. Officia sequi, voluptatem animi nihil expedita ullam quia at voluptate blanditiis dicta accusantium, aliquam error soluta, hic sapiente nostrum illo ducimus earum eum! Excepturi ad itaque quas eaque laboriosam dicta impedit, aliquid sint cumque vel laudantium exercitationem distinctio illo ut reiciendis. Neque rem inventore sapiente voluptas nobis accusantium, tempore ullam, veritatis praesentium quaerat sequi facere optio accusamus magnam molestias quos commodi sunt aliquid nemo. Velit explicabo officia sequi eos voluptatibus hic tempore eum!</p>
+                    </div>
+                    <div class="global-share">
+                        <span>Compartir en</span>
+                        <button onclick="return nativeShare();"><i class="ti ti-share"></i></button>
+                    </div>
+                    
+                </div>
+            </div>  
+        </section>
+        <section class="ficha-demas">
+            <div class="f-detalle">
+                <h2>Detalles</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, consequatur! Amet quis molestias, hic enim debitis libero eveniet ex, nisi maxime explicabo id sunt doloremque inventore mollitia rerum voluptatum suscipit porro, deleniti quod doloribus nulla! Et autem itaque quam nesciunt quisquam, eligendi distinctio velit accusantium harum accusamus soluta debitis ea quos ipsum, placeat culpa inventore minima. Ipsum, exercitationem ratione alias iste ex reprehenderit delectus et, sapiente perspiciatis saepe soluta reiciendis perferendis temporibus deserunt consectetur culpa doloremque quaerat distinctio. Veritatis vel aspernatur architecto cumque, officia ipsa similique consequatur saepe laboriosam fugit voluptatibus perferendis consectetur harum unde dolores recusandae eius. Facere, iusto.</p>
+            </div>
+            <div class="f-cuidado">
+                <h2>Cuidados</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti tenetur iste fugit quia porro! Qui provident fugit incidunt iure nesciunt doloribus labore nobis officiis in? Vel veritatis eum, sit labore in corporis aperiam eaque est nesciunt quos consequuntur adipisci. Modi vitae sint ipsum corporis voluptates cum itaque fugit unde. Sapiente?</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <span>Nuestro E-Commerce</span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/app.js"></script>
+    <script src="js/star.js"></script>
+    <script>
+        var nativeShare = function() {
+           if (navigator.share) { 
+              navigator.share({
+                 title: "titulo",
+                 text: "texto",
+                 url: "URL", 
+              }) 
+           }
+           return false;
+        }
+    </script>
+</body>
+</html>

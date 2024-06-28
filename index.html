@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi empredimiento</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"/>
+</head>
+<body>
+    <header>
+        <!--
+            <ul>
+                <li><a>Mujer</a></li>
+                <li><a>Hombre</a></li>
+                <li><a>Niño</a></li>
+                <li><a>Sale</a></li>
+            </ul>-->
+        <nav>
+            <a class="logo" href="index.html"><span>E</span>Commerce</a>
+            
+            <fieldset class="buscar-productos">
+                <button id="lupa" class="lupa"><i class="ti ti-search"></i></i></button>
+                <input id="buscar" class="buscar" type="text" placeholder="Buscar...">
+                <button class="x-lupa sleep"><i class="ti ti-x"></i></button>
+                <pre id="x-borrado"></pre>
+            </fieldset>
+            <div class="botonera">
+                <div><i id="carrito" class="ti ti-shopping-bag carrito">
+                    <span class="numero-carrito no-numero-carrito"></span>
+                </i></div>
+                <!--<div><i class="ti ti-user pedidos"></i></div>-->
+            </div>
+            <div id="mi-carrito" class="mi-carrito">
+                <div class="titulo-carrito">
+                    <h2>Mi carrito</h2>
+                    <div class="cont-cerrar"><i id="cerrar-carrito" class="ti ti-x cerrar-carrito"></i></div>
+                </div>
+                <div class="contenido-carrito">
+                    <p class="nada-en-carrito">No tienes ningún artículo en tu carrito de compras.
+                        <i class="ti ti-shopping-cart"></i>
+                    </p>
+                </div>
+
+                <div class="total">
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="barra-acciones">
+            <form class="form-acciones">
+                <fieldset>
+                    <label for="filtrador">Filtrar por</label>
+                    <select name="filtrador" id="filtrador">
+                        <option value="">Ver todo</option>
+                        <optgroup label="Marca">
+                            <option value="adidas">Adidas</option>
+                            <option value="nike">Nike</option>
+                            <option value="puma">Puma</option>
+                        </optgroup>
+                        <optgroup label="Categoria">
+                            <option value="calzado">Calzado</option>
+                            <option value="indumentaria">Indumentaria</option>
+                        </optgroup>
+                        <optgroup label="Genero">
+                            <option value="male">Hombre</option>
+                            <option value="female">Mujer</option>
+                            <option value="kid">Nino</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+            </form>
+        </div>
+        <h1 class="titulo-sect">Productos</h1>
+        <section id="contenedor-productos">
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h2 class="name"><span>E</span>Commerce</h2>
+            <span class="copy">Desarrollado por Lautaro Sánchez © <script>document.write(new Date().getFullYear())</script></span>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
